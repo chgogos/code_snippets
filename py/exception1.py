@@ -6,10 +6,10 @@ def average_positive(numbers):
 
 alist = []
 while True:
+    x = input("Εισήγαγε έναν αριθμό (κενό για τερματισμό): ")
+    if x == "":
+        break
     try:
-        x = input("Εισήγαγε έναν αριθμό (κενό για τερματισμό): ")
-        if x == "":
-            break
         x = float(x)
         alist.append(x)
     except ValueError:
